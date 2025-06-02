@@ -433,6 +433,56 @@ function App() {
                 <p className="text-sm text-gray-600 mt-3 font-medium">{loadingMessage}</p>
               </div>
             )}
+
+            {/* About This Project Card */}
+            <div className="mb-6 bg-white rounded-lg shadow-sm p-4 border border-blue-100">
+              <h2 className="font-bold text-lg mb-2 text-blue-700">Tentang Project Ini</h2>
+              <p className="text-sm text-gray-700 mb-2">
+                <b>Peta SiTempel</b> Aplikasi ini membantu Anda menemukan lokasi tambal ban terdekat secara cepat dan akurat menggunakan teknologi GIS dan GPS. Cocok untuk pengendara yang mengalami ban bocor di perjalanan dan butuh solusi cepat tanpa harus bertanya atau mencari manual.
+              </p>
+              <ul className="text-xs text-gray-500 list-disc ml-5 mb-2">
+                <li>Data lokasi tambal ban diambil dari file <code>bengkel.geojson</code>.</li>
+                <li>Teknologi: React, Leaflet, TailwindCSS.</li>
+                <li>Fitur: pencarian lokasi, navigasi, dan info detail bengkel.</li>
+              </ul>
+              <span className="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-2 py-1 rounded-full">
+                SIG Project 2025
+              </span>
+            </div>
+
+            {/* About Me Card */}
+            <div className="mb-6 bg-white rounded-lg shadow-sm p-4 border border-green-100">
+              <div className="flex items-center mb-2">
+                <img
+                  src="https://avatars.githubusercontent.com/u/40624866?v=4"
+                  alt="Rendio Simamora"
+                  className="w-10 h-10 rounded-full mr-2 border border-green-200"
+                />
+                <div>
+                  <div className="font-semibold text-gray-800">Rendio Simamora</div>
+                  <div className="text-xs text-gray-500">@rndio</div>
+                </div>
+              </div>
+              <p className="text-sm text-gray-700">
+                Software Engineer Intern at PT Perkebunan Nusantara IV Regional II | Undergraduate Software Engineering Student
+              </p>
+              <div className="mt-2 flex space-x-2">
+                <a
+                  href="mailto:mail@rndio.my.id"
+                  className="text-xs text-green-600 hover:text-green-800 underline"
+                >
+                  Email
+                </a>
+                <a
+                  href="https://github.com/rndio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-gray-600 hover:text-gray-800 underline"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
           </div>
         )}
       </div>
